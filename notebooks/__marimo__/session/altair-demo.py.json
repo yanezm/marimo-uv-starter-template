@@ -1,0 +1,93 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.23.11",
+    "script_metadata_hash": "d85dfaeeb0aa0dd198a0607a4ba61444"
+  },
+  "cells": [
+    {
+      "id": "setup",
+      "code_hash": "dd25085089b29c65c2e907882f089278",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "Hbol",
+      "code_hash": "003f15b70858fcafb34c835d2a81af87",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"reactive-plots\">Reactive plots! \ud83d\ude97 \u26a1</h1></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "5ed62d1a09f9197f80e26f83c811f8f8",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">This plot is <strong>interactive</strong>! Click and drag to select points to get a filtered dataset.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "4b6163987df34b1cc473084e11ad80e1",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "0e39fef90076ec190b6f6d776320022c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><span class=\"paragraph\">Select one or more cars from the table.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "0d735be318087b1318dede6af9965ba0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='lEQa-0' random-id='2fba6706-5fc2-b49c-b201-4bbf9e9eb991'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;&#92;&quot;:20,&#92;&quot;_marimo_row_id&#92;&quot;:0,&#92;&quot;Name&#92;&quot;:&#92;&quot;toyota corona mark ii&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:24.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:113.0,&#92;&quot;Horsepower&#92;&quot;:95.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2372,&#92;&quot;Acceleration&#92;&quot;:15.0,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Japan&#92;&quot;},{&#92;&quot;&#92;&quot;:21,&#92;&quot;_marimo_row_id&#92;&quot;:1,&#92;&quot;Name&#92;&quot;:&#92;&quot;plymouth duster&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:22.0,&#92;&quot;Cylinders&#92;&quot;:6,&#92;&quot;Displacement&#92;&quot;:198.0,&#92;&quot;Horsepower&#92;&quot;:95.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2833,&#92;&quot;Acceleration&#92;&quot;:15.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;USA&#92;&quot;},{&#92;&quot;&#92;&quot;:23,&#92;&quot;_marimo_row_id&#92;&quot;:2,&#92;&quot;Name&#92;&quot;:&#92;&quot;ford maverick&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:21.0,&#92;&quot;Cylinders&#92;&quot;:6,&#92;&quot;Displacement&#92;&quot;:200.0,&#92;&quot;Horsepower&#92;&quot;:85.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2587,&#92;&quot;Acceleration&#92;&quot;:16.0,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;USA&#92;&quot;},{&#92;&quot;&#92;&quot;:24,&#92;&quot;_marimo_row_id&#92;&quot;:3,&#92;&quot;Name&#92;&quot;:&#92;&quot;datsun pl510&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:27.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:97.0,&#92;&quot;Horsepower&#92;&quot;:88.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2130,&#92;&quot;Acceleration&#92;&quot;:14.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Japan&#92;&quot;},{&#92;&quot;&#92;&quot;:25,&#92;&quot;_marimo_row_id&#92;&quot;:4,&#92;&quot;Name&#92;&quot;:&#92;&quot;volkswagen 1131 deluxe sedan&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:26.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:97.0,&#92;&quot;Horsepower&#92;&quot;:46.0,&#92;&quot;Weight_in_lbs&#92;&quot;:1835,&#92;&quot;Acceleration&#92;&quot;:20.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Europe&#92;&quot;},{&#92;&quot;&#92;&quot;:26,&#92;&quot;_marimo_row_id&#92;&quot;:5,&#92;&quot;Name&#92;&quot;:&#92;&quot;peugeot 504&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:25.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:110.0,&#92;&quot;Horsepower&#92;&quot;:87.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2672,&#92;&quot;Acceleration&#92;&quot;:17.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Europe&#92;&quot;},{&#92;&quot;&#92;&quot;:27,&#92;&quot;_marimo_row_id&#92;&quot;:6,&#92;&quot;Name&#92;&quot;:&#92;&quot;audi 100 ls&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:24.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:107.0,&#92;&quot;Horsepower&#92;&quot;:90.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2430,&#92;&quot;Acceleration&#92;&quot;:14.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Europe&#92;&quot;},{&#92;&quot;&#92;&quot;:28,&#92;&quot;_marimo_row_id&#92;&quot;:7,&#92;&quot;Name&#92;&quot;:&#92;&quot;saab 99e&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:25.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:104.0,&#92;&quot;Horsepower&#92;&quot;:95.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2375,&#92;&quot;Acceleration&#92;&quot;:17.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Europe&#92;&quot;},{&#92;&quot;&#92;&quot;:30,&#92;&quot;_marimo_row_id&#92;&quot;:8,&#92;&quot;Name&#92;&quot;:&#92;&quot;amc gremlin&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:21.0,&#92;&quot;Cylinders&#92;&quot;:6,&#92;&quot;Displacement&#92;&quot;:199.0,&#92;&quot;Horsepower&#92;&quot;:90.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2648,&#92;&quot;Acceleration&#92;&quot;:15.0,&#92;&quot;Year&#92;&quot;:&#92;&quot;1970-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;USA&#92;&quot;},{&#92;&quot;&#92;&quot;:35,&#92;&quot;_marimo_row_id&#92;&quot;:9,&#92;&quot;Name&#92;&quot;:&#92;&quot;datsun pl510&#92;&quot;,&#92;&quot;Miles_per_Gallon&#92;&quot;:27.0,&#92;&quot;Cylinders&#92;&quot;:4,&#92;&quot;Displacement&#92;&quot;:97.0,&#92;&quot;Horsepower&#92;&quot;:88.0,&#92;&quot;Weight_in_lbs&#92;&quot;:2130,&#92;&quot;Acceleration&#92;&quot;:14.5,&#92;&quot;Year&#92;&quot;:&#92;&quot;1971-01-01 00:00:00&#92;&quot;,&#92;&quot;Origin&#92;&quot;:&#92;&quot;Japan&#92;&quot;}]&quot;' data-total-rows='213' data-total-columns='9' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;Miles_per_Gallon&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;Cylinders&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;Displacement&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;Horsepower&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;Weight_in_lbs&quot;,[&quot;integer&quot;,&quot;int64&quot;]],[&quot;Acceleration&quot;,[&quot;number&quot;,&quot;float64&quot;]],[&quot;Year&quot;,[&quot;datetime&quot;,&quot;datetime64[us]&quot;]],[&quot;Origin&quot;,[&quot;string&quot;,&quot;str&quot;]]]' data-selection='&quot;multi&quot;' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='true' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[[&quot;&quot;,[&quot;integer&quot;,&quot;int64&quot;]]]' data-hidden-columns='[]' data-has-stable-row-id='true' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "01d33444409aac3e1e1a3c06e2f207aa",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
